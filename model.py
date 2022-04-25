@@ -44,8 +44,8 @@ class LinearBlock(nn.Module):
             # nn.Linear(in_features, in_features//2),
             # nn.ReLU(),
             nn.Linear(in_features, out_features),
-            # nn.Softmax(dim=1)
-            nn.Sigmoid()
+            nn.Softmax(dim=1)
+            # nn.Sigmoid()
         )
     
     def forward(self, x):
